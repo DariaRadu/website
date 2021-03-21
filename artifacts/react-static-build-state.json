@@ -1,0 +1,54 @@
+{
+  "prefetchRate": 5,
+  "maxThreads": 1,
+  "disableRoutePrefixing": false,
+  "outputFileRate": 100,
+  "extensions": [
+    ".js",
+    ".jsx"
+  ],
+  "minLoadTime": 200,
+  "disablePreload": false,
+  "disableRuntime": false,
+  "preloadPollInterval": 300,
+  "productionSourceMaps": false,
+  "silent": false,
+  "entry": "index.js",
+  "paths": {
+    "ROOT": "C:\\Daria\\Code\\website",
+    "SRC": "C:\\Daria\\Code\\website\\src",
+    "DIST": "C:\\Daria\\Code\\website\\dist",
+    "ASSETS": "C:\\Daria\\Code\\website\\dist",
+    "PLUGINS": "C:\\Daria\\Code\\website\\plugins",
+    "TEMP": "C:\\Daria\\Code\\website\\tmp",
+    "ARTIFACTS": "C:\\Daria\\Code\\website\\artifacts",
+    "PUBLIC": "C:\\Daria\\Code\\website\\public",
+    "NODE_MODULES": "C:\\Daria\\Code\\website\\node_modules",
+    "EXCLUDE_MODULES": "C:\\Daria\\Code\\website\\node_modules",
+    "PACKAGE": "C:\\Daria\\Code\\website\\package.json",
+    "HTML_TEMPLATE": "C:\\Daria\\Code\\website\\dist\\index.html",
+    "STATIC_DATA": "C:\\Daria\\Code\\website\\dist\\staticData"
+  },
+  "plugins": [
+    "C:\\Daria\\Code\\website"
+  ],
+  "siteRoot": "/",
+  "basePath": "",
+  "publicPath": "/",
+  "assetsPath": "",
+  "extractCssChunks": false,
+  "inlineCss": false,
+  "babelExcludes": [],
+  "devServer": {
+    "host": "localhost",
+    "port": 3000
+  },
+  "terser": {
+    "terserOptions": {
+      "mangle": {},
+      "parse": {},
+      "compress": {},
+      "output": {}
+    }
+  }
+}
