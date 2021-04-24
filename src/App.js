@@ -1,15 +1,20 @@
 import React from 'react'
 
 import './app.css'
-import logo from './logo.png'
+import useStyles from './styles/app';
+import Grid from '@material-ui/core/Grid';
+import Header from './components/Header';
+import TabMenu from './components/TabMenu';
 
 const App = () => {
+  const classes = useStyles();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Daria's website!</h1>
-      </header>
+    <div className={classes.App}>
+      <Header/>
+      <Grid container className={classes.tabMenu}>
+        <TabMenu/>
+      </Grid>
+      
     </div>
   )
 }
