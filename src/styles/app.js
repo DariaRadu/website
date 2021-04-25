@@ -4,6 +4,9 @@ const useStyles = makeStyles({
     App: {
         tabMenu: {
             width: '100vw'
+        },
+        body: {
+            color: 'white'
         }
     }
 

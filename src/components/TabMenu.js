@@ -59,10 +59,10 @@ export default function FullWidthTabs() {
           value={value}
           onChange={handleChange}
           indicatorColor="primary"
-          textColor="primary"
           variant="fullWidth"
           aria-label="full width tabs example"
-		  centered
+		      centered
+          className={classes.tabs}
         >
           <Tab label="Experience" {...a11yProps(0)} />
           <Tab label="Projects" {...a11yProps(1)} />
@@ -70,13 +70,13 @@ export default function FullWidthTabs() {
         </Tabs>
       </AppBar>
 		<TabPanel value={value} index={0} dir={theme.direction}>
-			<TabFile topic={"experience"}/>
+			<TabFile topic={"Experience"}/>
 		</TabPanel>
 		<TabPanel value={value} index={1} dir={theme.direction}>
-      <TabFile topic={"projects"}/>
+      <TabFile topic={"Projects"}/>
 		</TabPanel>
 		<TabPanel value={value} index={2} dir={theme.direction}>
-      <TabFile topic={"education"}/>
+      <TabFile topic={"Education"}/>
 		</TabPanel>
     </div>
   );

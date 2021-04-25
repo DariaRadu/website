@@ -13,6 +13,6 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 // Get a reference to the database service
-const database = firebase.database().ref();
+const database = firebase.database();
 
 export default database;

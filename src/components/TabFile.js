@@ -1,18 +1,42 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Grid from '@material-ui/core/Grid';
-
+import ExperienceField from './ExperienceField';
+import ProjectsField from './ProjectsField';
+import EducationField from './EducationField';
 import useStyles from '../styles/tabFile';
 
 import db from '../util/db';
 
 const TabFile = (props) => {
+    const [data, setData] = useState([]);
     const classes = useStyles();
+
+    useEffect(() => {
+        const dataRef = db.ref(props.topic);
+        dataRef.on('value', (snapshot) => {
+          const newData = snapshot.val();
+          const newDataList = [];
+          for (let id in newData) {
+            newDataList.push({ id, ...newData[id] });
+          }
+          setData(newDataList);
+        });
+      }, []);
     return (
         <Grid container justify="center" spacing={2}>
-            <h2>{props.topic}</h2>
+            <h2 className={classes.tabTitle}>{props.topic}</h2>
             <Grid container>
-                <Grid item xs={12} sm={6}>Test1</Grid>
-                <Grid item xs={12} sm={6}>Test2</Grid>
+                {data.length && props.topic == "Experience"
+                ? data.map((field, index) => <ExperienceField key={index} data={field}/>)
+                : ''}
+
+                {data.length && props.topic == "Projects"
+                ? data.map((field, index) => <ProjectsField key={index} data={field}/>)
+                : ''}
+
+                {data.length && props.topic == "Education"
+                ? data.map((field, index) => <EducationField key={index} data={field}/>)
+                : ''}
             </Grid>
         </Grid>
     )

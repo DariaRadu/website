@@ -2,6 +2,16 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
 
+import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#FFFFFF'
+    },
+  }
+});
+
 // Your top level component
 import App from './App'
 
@@ -18,9 +28,12 @@ if (typeof document !== 'undefined') {
 
   const render = Comp => {
     renderMethod(
-      <AppContainer>
-        <Comp />
-      </AppContainer>,
+      <ThemeProvider theme={theme}>
+        <AppContainer>
+          <Comp />
+        </AppContainer>
+      </ThemeProvider>
+      ,
       target
     )
   }
