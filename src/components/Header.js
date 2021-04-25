@@ -15,8 +15,7 @@ const Header = () => {
 				<h1>Hi, I am Daria.</h1>
 				<div className={classes.profileDescription}>
 					<p>Software Engineer, Game Developer with a passion for Machine Learning. Avid traveller and wannabe dancer.</p>
-					<p>Want to contact me or see how I coded this website (plus other fun projects)?</p>
-					<p>Want to see how I coded this website (plus other fun projects)? Find me at dariaradur3@gmail.com (or the links below!)</p>
+					<p>Want to contact me or see how I coded this website (plus other fun projects)? Find me at dariaradur3@gmail.com (or the links below!)</p>
 				</div>
 				<div className={classes.icons}>
 					<a className={classes.iconLink} href={'https://www.linkedin.com/in/dariaradu/'} target={'_blank'}>

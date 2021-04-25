@@ -27,6 +27,7 @@ const useStyles = makeStyles({
     icons: {
         display: 'flex',
         justifyContent: 'space-evenly',
+        paddingTop: '5vh',
     },
 
     icon: {
