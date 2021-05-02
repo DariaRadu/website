@@ -2,8 +2,8 @@ import React from 'react'
 import Grid from '@material-ui/core/Grid';
 
 import useStyles from '../styles/field';
-import ForestDaemons from '../img/forestDaemons.png';
-import Settings from '../img/settings.png';
+import ForestDaemons from '../img/forestDaemons.jpg';
+import Settings from '../img/settings.jpg';
 import MM from '../img/mm.png';
 import IRTCD from '../img/irtcd.png';
 
