@@ -1,6 +1,6 @@
 {
   "prefetchRate": 5,
-  "maxThreads": 1,
+  "maxThreads": null,
   "disableRoutePrefixing": false,
   "outputFileRate": 100,
   "extensions": [
@@ -8,7 +8,7 @@
     ".jsx"
   ],
   "minLoadTime": 200,
-  "disablePreload": false,
+  "disablePreload": true,
   "disableRuntime": false,
   "preloadPollInterval": 300,
   "productionSourceMaps": false,

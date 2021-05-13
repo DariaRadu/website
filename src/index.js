@@ -1,8 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
+import { addPrefetchExcludes } from 'react-static'
 
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+
+addPrefetchExcludes(['/',])
 
 const theme = createMuiTheme({
   palette: {
