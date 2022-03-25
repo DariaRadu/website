@@ -6,7 +6,7 @@ const useStyles = makeStyles({
     },
 
     tabTitle: {
-        fontSize: '30px',
+        fontSize: '40px',
     }
 
 })

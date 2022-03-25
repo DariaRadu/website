@@ -5,7 +5,7 @@ const useStyles = makeStyles({
     fieldContainer: {
         color: 'white',
         minHeight: '30vh',
-        padding: '5vh 8vw 5vh 8vw',
+        padding: '5vh 10vw 5vh 10vw',
         fontSize: '18px',
         '& p': {
             margin: '1vh',
@@ -30,7 +30,7 @@ const useStyles = makeStyles({
 
     projectImage: {
         width: '100%',
-        height: '30vh',
+        height: '40vh',
         objectFit: 'cover',
     },
 

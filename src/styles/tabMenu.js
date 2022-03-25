@@ -7,8 +7,11 @@ const useStyles = makeStyles({
     },
 
     tabs: {
-        backgroundColor:'#1882A0',
+        backgroundColor:'#2f0147',
         color: 'white',
+        minHeight: '7vh',
+        display: 'flex',
+        alignItems: 'center',
     },
 })
 

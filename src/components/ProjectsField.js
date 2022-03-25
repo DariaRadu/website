@@ -20,12 +20,12 @@ const ProjectsField = (props) => {
 
     return (
         <Grid container spacing={2} className={classes.fieldContainer}>
-            <Grid item xs={12} sm={7} className={classes.fieldData}>
+            <Grid item xs={12} md={6} className={classes.fieldData}>
                 <p className={classes.title}>{data.title}</p>
                 <p>{data.description}</p>
                 <p>Find the project <a href={data.link} target={'_blank'}>here.</a></p>
             </Grid>
-            <Grid item xs={12} sm={5}>
+            <Grid item xs={12} md={6}>
                 {selectImage(data.title)}
             </Grid>
         </Grid>
