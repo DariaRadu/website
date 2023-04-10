@@ -10,6 +10,8 @@ const useStyles = makeStyles({
         display: 'flex',
         justifyContent: 'space-evenly',
         paddingTop: '5vh',
+        paddingRight: '10vw',
+        paddingLeft: '10vw'
     },
 
     icon: {
@@ -28,10 +30,10 @@ const useStyles = makeStyles({
 
     bgImage: {
         fontSize: 'calc(10px + 1vmin)',
-        color: 'white',
-        backgroundImage: `linear-gradient(0deg, rgba(226 194 198 / 50%), rgba(47 1 71 / 75%)), url(${profilePicture})`,
+        color: '#FCFCFC',
+        backgroundImage: `linear-gradient(0deg, rgba(247,86,124,1) 0%,  rgba(153,225,217,0.75) 100%), url(${profilePicture})`,
         minHeight: '60vh',
-        paddingTop: '15vh',
+        padding: '15vh 5vw 0 5vw',
         textAlign: 'center',
         position: 'relative',
         zIndex: 1,

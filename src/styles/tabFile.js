@@ -2,11 +2,12 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
     tabContainer: {
-        minHeight: '55vh',
+        minHeight: '90vh',
     },
 
     tabTitle: {
-        fontSize: '40px',
+        fontSize: '50px',
+        color: '#5d576b',
     }
 
 })

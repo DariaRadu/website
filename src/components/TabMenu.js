@@ -64,9 +64,9 @@ export default function FullWidthTabs() {
 		      centered
           className={classes.tabs}
         >
-          <Tab label="Experience" {...a11yProps(0)} />
-          <Tab label="Projects" {...a11yProps(1)} />
-          <Tab label="Education" {...a11yProps(2)} />
+          <Tab className={classes.tab} label="Experience" {...a11yProps(0)} />
+          <Tab className={classes.tab} label="Projects" {...a11yProps(1)} />
+          <Tab className={classes.tab} label="Education" {...a11yProps(2)} />
         </Tabs>
       </AppBar>
 		<TabPanel value={value} index={0} dir={theme.direction}>

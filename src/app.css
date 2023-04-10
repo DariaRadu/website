@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #b9929f;
-  font-family: 'Montserrat', sans-serif;
+  background-color: #fcfcfc;
+  font-family: 'Exo 2', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-  color: #e2c2c6
+  color: #5d576b;
+  font-weight: 600;
 }
 
 code {

@@ -6,7 +6,7 @@ const useStyles = makeStyles({
             width: '100vw'
         },
         body: {
-            color: 'white'
+            color: '#5d576b'
         }
     }
 

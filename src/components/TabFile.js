@@ -22,6 +22,7 @@ const TabFile = (props) => {
           setData(newDataList);
         });
       }, []);
+
     return (
         <Grid container justify="center" spacing={2} className={classes.tabContainer}>
             <h2 className={classes.tabTitle}>{props.topic}</h2>

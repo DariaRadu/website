@@ -25,11 +25,13 @@ const ExperienceField = (props) => {
     }
 
     return (
-        <Grid container spacing={2} className={classes.fieldContainer}>
-            <Grid item xs={12} md={4} className={classes.imageContainer}>
+        <Grid container className={classes.fieldContainer}>
+            <Grid item xs={0} md={2}>
+            </Grid>
+            <Grid item xs={12} md={2} className={classes.imageContainer}>
                 {selectImage(data.company)}
             </Grid>
-            <Grid item xs={12} md={8} className={classes.fieldData}>
+            <Grid item xs={12} md={6} className={classes.fieldData}>
                 <p className={classes.title}>{data.title}</p>
                 <p className={classes.company}>{data.company}</p>
                 <p><em>{data.period}</em></p>

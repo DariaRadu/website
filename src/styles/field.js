@@ -3,10 +3,10 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles({
 
     fieldContainer: {
-        color: 'white',
-        minHeight: '30vh',
-        padding: '5vh 10vw 5vh 10vw',
-        fontSize: '18px',
+        color: '#5d576b',
+        minHeight: '20vh',
+        padding: '5vh 2vw 5vh 2vw',
+        fontSize: '20px',
         '& p': {
             margin: '1vh',
         }
@@ -19,12 +19,13 @@ const useStyles = makeStyles({
 
     imageContainer: {
         display: 'flex',
-        justifyContent:'center',
+        justifyContent: 'center',
+        alignItems: 'center',
     },
 
     fieldImage: {
-        width: '50%',
-        height: 'auto',
+        maxWidth: '100%',
+        maxHeight: '20vh',
         objectFit: 'contain',
     },
 
@@ -40,7 +41,6 @@ const useStyles = makeStyles({
     },
 
     educationContainer: {
-        color: 'white',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -54,7 +54,7 @@ const useStyles = makeStyles({
     },
 
     title: {
-        fontSize: '27px',
+        fontSize: '30px',
         fontWeight: '800'
     },
 

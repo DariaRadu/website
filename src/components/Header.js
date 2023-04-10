@@ -2,6 +2,7 @@ import React from 'react'
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import VideogameAssetIcon from '@material-ui/icons/VideogameAsset';
 
 import useStyles from '../styles/header';
 
@@ -24,6 +25,9 @@ const Header = () => {
 					</a>
 					<a className={classes.iconLink} href={'https://twitter.com/sparklesdaria'} target={'_blank'}>
 						<TwitterIcon className={classes.icon}/>
+					</a>
+					<a className={classes.iconLink} href={'https://dariaradu.itch.io/'} target={'_blank'}>
+						<VideogameAssetIcon className={classes.icon}/>
 					</a>
 				</div>
 			</header>

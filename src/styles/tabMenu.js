@@ -3,12 +3,16 @@ import { makeStyles, withTheme } from '@material-ui/core/styles';
 const useStyles = makeStyles({
     root: {
         width:'100%',
-        color: 'white'
+    },
+
+    tab: {
+        fontFamily: '"Exo 2"',
+        fontSize: '30px'
     },
 
     tabs: {
-        backgroundColor:'#2f0147',
         color: 'white',
+        backgroundColor:'#f7567c',
         minHeight: '7vh',
         display: 'flex',
         alignItems: 'center',
