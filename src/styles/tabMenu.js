@@ -7,7 +7,7 @@ const useStyles = makeStyles({
 
     tab: {
         fontFamily: '"Exo 2"',
-        fontSize: '30px'
+        fontSize: "20px",
     },
 
     tabs: {
